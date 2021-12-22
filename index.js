@@ -11,9 +11,9 @@ const client = new Client({
     ]
 })
 //Login to the Bot
-client.login("YOUR-BOT-TOKEN");
+client.login(require("./config.json").token);
 //an array of all channels can be a database output too!
-const Channels = ["888703736954908702", "871368919305297981"];
+const Channels = require("./config.json").VC_channels;
 //Once the bot is ready join all channels and play the audio
 client.on("ready", async () => {
     for(const channelId of Channels){
