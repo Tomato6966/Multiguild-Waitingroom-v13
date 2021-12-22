@@ -1,3 +1,4 @@
 {
-  "token": ""  
+  "token": "",
+  "VC_channels": ["ID_1", "ID_2", "..." ]
 }
